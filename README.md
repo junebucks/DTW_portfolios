@@ -1,2 +1,2 @@
 # DTW_portfolios
- Supplementary Material
+ Supplementary Material for study
