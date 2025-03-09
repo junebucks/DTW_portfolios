@@ -13,7 +13,14 @@ GICS sector 기준 10개 섹터 내 시가 총액 상위 3개
 
 | Metrics | Traditional | TDTW | CDTW (Matern) | CDTW (Exponential) |CDTW (Gaussian)|
 |--|--|--|--|--|--|
-|Sharpe Ratio|1 2 3|4|5|
+|Cum ret|1|2|3|4|5|
+|Ann ret|1|2|3|4|5|
+|Ann vol|1|2|3|4|5|
+|Sharpe R|1|2|3|4|5|
+|Sortino R|1|2|3|4|5|
+|MDD|1|2|3|4|5|
+|Calmar R|1|2|3|4|5|
+
 
 결과 포인트 리스트로 정리
 - 리스트1
