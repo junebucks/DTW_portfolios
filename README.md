@@ -7,12 +7,22 @@
  - 주식 개수의 변화
  - 리밸런싱 주기의 변화
 
-## 1. The Number of Stocks
+
+
+
+## 1. Rebalaning Period
+주기 3개월, 6개월, 1년
+
+
+
+
+## 2. The Number of Stocks
 
 GICS sector 기준 10개 섹터 내 시가 총액 상위 3개
 
 | Metrics | Traditional | TDTW | CDTW (Matern) | CDTW (Exponential) |CDTW (Gaussian)|
 |--|--|--|--|--|--|
+|||MDP||||
 |Cum ret|1|2|3|4|5|
 |Ann ret|1|2|3|4|5|
 |Ann vol|1|2|3|4|5|
@@ -27,12 +37,3 @@ GICS sector 기준 10개 섹터 내 시가 총액 상위 3개
 - 리스트2
 
 data 1,2 
-
-
-
-
-## 2. Rebalaning Period
-주기 3개월, 6개월, 1년
-
-
-
