@@ -13,39 +13,6 @@ These results used the same data as the study, but with rebalancing period of qu
 
 The tables show results using Maximum Diversification Portfolio (MDP), Equally Risk Contribution Portfolio (ERCP), Hirarchical Risky Parity (HRP) from above.
 
-| Metrics | Traditional | TDTW | CDTW (Matern) | CDTW (Exponential) |CDTW (Gaussian)|
-|--|--|--|--|--|--|
-|Cum ret|1|2|3|4|5|
-|Ann ret|1|2|3|4|5|
-|Ann vol|1|2|3|4|5|
-|Sharpe R|1|2|3|4|5|
-|Sortino R|1|2|3|4|5|
-|MDD|1|2|3|4|5|
-|Calmar R|1|2|3|4|5|
-
-
-| Metrics | Traditional | TDTW | CDTW (Matern) | CDTW (Exponential) |CDTW (Gaussian)|
-|--|--|--|--|--|--|
-|Cum ret|1|2|3|4|5|
-|Ann ret|1|2|3|4|5|
-|Ann vol|1|2|3|4|5|
-|Sharpe R|1|2|3|4|5|
-|Sortino R|1|2|3|4|5|
-|MDD|1|2|3|4|5|
-|Calmar R|1|2|3|4|5|
-
-| Metrics | Traditional | TDTW | CDTW (Matern) | CDTW (Exponential) |CDTW (Gaussian)|
-|--|--|--|--|--|--|
-|Cum ret|1|2|3|4|5|
-|Ann ret|1|2|3|4|5|
-|Ann vol|1|2|3|4|5|
-|Sharpe R|1|2|3|4|5|
-|Sortino R|1|2|3|4|5|
-|MDD|1|2|3|4|5|
-|Calmar R|1|2|3|4|5|
-
-
-
 ### 1.2 Year
 
 
@@ -108,8 +75,8 @@ In ERCP, summarize the results as follows
 
 In HRP, summarize the results as follows
 - Portfolios with covariance structure constructed using DTW tended to perform better than those using traditional covariance structure.
-- CDTW with matern covariance functuin with mathtr=i covariance function performs best based on the Sharpe ratio.
-- CDTW with Gaussian covariance function performs best for all five performance metrics except Annual volatility and MDD, for which the traditional model performs best.
+- CDTW with matern covariance functuin performs best based on the Sharpe ratio.
+- CDTW with Gaussian covariance function performs best for all five performance metrics except Annual volatility and MDD, where the traditional model performs best for annual volatility and TDTW performs best for MDD.
 
 
 
@@ -120,33 +87,49 @@ The tables show results using MDP, ERCP, HRP from above.
 
 | Metrics | Traditional | TDTW | CDTW (Matern) | CDTW (Exponential) |CDTW (Gaussian)|
 |--|--|--|--|--|--|
-|Cum ret|0.4030|0.6261|0.4736|0.4660|0.5961|
-|Ann ret|0.0416|0.0603|0.0478|0.0471|0.0579|
-|Ann vol|0.1810|0.1790|0.1790|0.1787|0.1801|
-|Sharpe R|0.2300|0.3369|0.2670|0.2638|0.3215|
-|Sortino R|0.0288|0.0381|0.0319|0.0316|0.0367|
-|MDD|0.4757|0.5010|0.5108|0.5109|0.5109|
-|Calmar R|0.0875|0.1203|0.0936|0.0923|0.1134|
+|Cum ret|0.4030|**0.6261**|0.4736|0.4660|0.5961|
+|Ann ret|0.0416|**0.0603**|0.0478|0.0471|0.0579|
+|Ann vol|0.1810|**0.1790**|0.1790|0.1787|0.1801|
+|Sharpe R|0.2300|**0.3369**|0.2670|0.2638|0.3215|
+|Sortino R|0.0288|**0.0381**|0.0319|0.0316|0.0367|
+|MDD|**0.4757**|0.5010|0.5108|0.5109|0.5109|
+|Calmar R|0.0875|**0.1203**|0.0936|0.0923|0.1134|
 
 
-| Metrics | Traditional | TDTW | CDTW (Matern) | CDTW (Exponential) |CDTW (Gaussian)|
-|--|--|--|--|--|--|
-|Cum ret|0.6703|0.7046|0.7022|0.7001|0.7153|
-|Ann ret|0.0637|0.0663|0.0661|0.0660|0.0671|
-|Ann vol|0.1789|0.1796|0.1797|0.1796|0.1799|
-|Sharpe R|0.3561|0.3693|0.3681|0.3674|0.3731|
-|Sortino R|0.0398|0.0410|0.0409|0.0408|0.0414|
-|MDD|0.4959|0.4971|0.4985|0.4986|0.4986|
-|Calmar R|0.1285|0.1334|0.1327|0.1323|0.1346|
+In MDP, summarize the results as follows
+- Portfolios with covariance structure constructed using DTW tended to perform better than those using traditional covariance structure.
+- CDTW with Gaussian covariance function performs best based on the Sharpe ratio as Data1. 
+- CDTW with Gaussian covariance function performs best for all six performance metrics except MDD, for which the traditional model performs best.
 
 | Metrics | Traditional | TDTW | CDTW (Matern) | CDTW (Exponential) |CDTW (Gaussian)|
 |--|--|--|--|--|--|
-|Cum ret|0.6868|0.6760|0.7316|0.7270|0.07752|
-|Ann ret|0.0650|0.0641|0.0683|0.0680|0.0715|
-|Ann vol|0.1795|0.1784|0.1804|0.1802|0.1811|
-|Sharpe R|0.3620|0.3595|0.3789|0.3775|0.3951|
+|Cum ret|0.6703|0.7046|0.7022|0.7001|**0.7153**|
+|Ann ret|0.0637|0.0663|0.0661|0.0660|**0.0671**|
+|Ann vol|**0.1789**|0.1796|0.1797|0.1796|0.1799|
+|Sharpe R|0.3561|0.3693|0.3681|0.3674|**0.3731**|
+|Sortino R|0.0398|0.0410|0.0409|0.0408|**0.0414**|
+|MDD|**0.4959**|0.4971|0.4985|0.4986|0.4986|
+|Calmar R|0.1285|0.1334|0.1327|0.1323|**0.1346**|
+
+
+In ERCP, summarize the results as follows
+- Portfolios with covariance structure constructed using DTW tended to perform better than those using traditional covariance structure.
+- CDTW with Gaussian covariance function performs best based on the Sharpe ratio as Data1.
+- CDTW with Gaussian covariance function performs best for all five performance metrics except Annual volatility and MDD, for which the traditional model performs best as Data1.
+
+| Metrics | Traditional | TDTW | CDTW (Matern) | CDTW (Exponential) |CDTW (Gaussian)|
+|--|--|--|--|--|--|
+|Cum ret|0.6868|0.6760|0.7316|0.7270|**0.7752**|
+|Ann ret|0.0650|0.0641|0.0683|0.0680|**0.0715**|
+|Ann vol|0.1795|**0.1784**|0.1804|0.1802|0.1811|
+|Sharpe R|0.3620|0.3595|0.3789|0.3775|**0.3951**|
 |Sortino R|0.0403|0.0400|0.0419|0.0418|0.0434|
 |MDD|0.5056|0.4939|0.4965|0.4954|0.4954|
 |Calmar R|0.1285|0.1299|0.1376|0.1373|0.1444|
 
+
+In HRP, summarize the results as follows
+- Portfolios with covariance structure constructed using DTW tended to perform better than those using traditional covariance structure.
+- CDTW with matern covariance functuin performs best based on the Sharpe ratio.
+- CDTW with Gaussian covariance function performs best for all five performance metrics except Annual volatility and MDD, where the traditional model performs best for annual volatility and TDTW performs best for MDD.
 
