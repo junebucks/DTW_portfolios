@@ -63,33 +63,34 @@ The tables show results using Maximum Diversification Portfolio (MDP), Equally R
 
 | Metrics | Traditional | TDTW | CDTW (Matern) | CDTW (Exponential) |CDTW (Gaussian)|
 |--|--|--|--|--|--|
-|Cum ret|0.0259|0.4697|0.3275|0.3911|0.3990|
-|Ann ret|0.0031|0.0475|0.0347|0.0405|0.0412|
-|Ann vol|0.1770|0.1695|0.1720|0.1720|0.1719|
-|Sharpe R|0.0174|0.2799|0.2017|0.2357|0.2399|
-|Sortino R|0.0093|0.0318|0.0252|0.0281|0.0284|
-|MDD|0.4207|0.4674|0.4741|0.4741|0.4740|
-|Calmar R|0.0073|0.1015|0.0732|0.0855|0.0870|
+|Cum ret|0.0259|**0.4697**|0.3275|0.3911|0.3990|
+|Ann ret|0.0031|**0.0475**|0.0347|0.0405|0.0412|
+|Ann vol|0.1770|**0.1695**|0.1720|0.1720|0.1719|
+|Sharpe R|0.0174|**0.2799**|0.2017|0.2357|0.2399|
+|Sortino R|0.0093|**0.0318**|0.0252|0.0281|0.0284|
+|MDD|**0.4207**|0.4674|0.4741|0.4741|0.4740|
+|Calmar R|0.0073|**0.1015**|0.0732|0.0855|0.0870|
 
 In MDP, summarize the results as follows
-- 전통적인 것들보다 DTW를 쓴 것이 우수한 경향
-- 설명 변수 별 특징 같은거
-- 뭐가 제일 좋은지
+- Portfolios with covariance structure constructed using DTW tended to perform better than those using traditional covariance structure.
+- TDTW performs best based on the Sharpe ratio.
+- TDTW performs best for all six performance metrics except MDD, for which the traditional model performs best.
 
+- 
 | Metrics | Traditional | TDTW | CDTW (Matern) | CDTW (Exponential) |CDTW (Gaussian)|
 |--|--|--|--|--|--|
-|Cum ret|0.4737|0.6011|0.6104|0.6127|0.6152|
-|Ann ret|0.0478|0.0583|0.0590|0.0592|0.0594|
-|Ann vol|0.1686|0.1688|0.1689|0.1690|0.1690|
-|Sharpe R|0.2835|0.3453|0.3495|0.3505|0.3516|
-|Sortino R|0.0321|0.0375|0.0379|0.0379|0.0380|
-|MDD|0.4533|0.4611|0.4624|0.4624|0.4624|
-|Calmar R|0.1055|0.1265|0.1277|0.1281|0.1285|
+|Cum ret|0.4737|0.6011|0.6104|0.6127|**0.6152**|
+|Ann ret|0.0478|0.0583|0.0590|0.0592|**0.0594**|
+|Ann vol|**0.1686**|0.1688|0.1689|0.1690|0.1690|
+|Sharpe R|0.2835|0.3453|0.3495|0.3505|**0.3516**|
+|Sortino R|0.0321|0.0375|0.0379|0.0379|**0.0380**|
+|MDD|**0.4533**|0.4611|0.4624|0.4624|0.4624|
+|Calmar R|0.1055|0.1265|0.1277|0.1281|**0.1285**|
 
-In MDP, summarize the results as follows
-- 전통적인 것들보다 DTW를 쓴 것이 우수한 경향
-- 설명 변수 별 특징 같은거
-- 뭐가 제일 좋은지
+In ERCP, summarize the results as follows
+- Portfolios with covariance structure constructed using DTW tended to perform better than those using traditional covariance structure.
+- CDTW with Gaussian covariance function performs best based on the Sharpe ratio.
+- CDTW with Gaussian covariance function performs best for all five performance metrics except Annual volatility and MDD, for which the traditional model performs best.
 
 | Metrics | Traditional | TDTW | CDTW (Matern) | CDTW (Exponential) |CDTW (Gaussian)|
 |--|--|--|--|--|--|
